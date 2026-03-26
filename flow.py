@@ -29,7 +29,7 @@ async def handle_message(sender, user_msg):
 
     elif user_msg == "english":
         await send_request(send_list(sender,
-    """Welcome to Mrignayanee – An Initiative of Government of Madhya Pradesh 🇮🇳
+    """Welcome to Mrignayanee An Initiative of Government of Madhya Pradesh 🇮🇳
 Explore 100% authentic handloom & handicraft products made by our skilled artisans.
 How can I assist you today?""",
     [{
@@ -90,7 +90,7 @@ How can I assist you today?""",
 
     elif user_msg == "support_en":
         await send_request(send_text(sender,
-            "Need help? Contact us via website support section."))
+            "Need help? Contact us via website support section.\n👉 https://themrignayanee.com/contact"))
 
     # -------- HINDI -------- #
 

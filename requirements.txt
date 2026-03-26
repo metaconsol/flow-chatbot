@@ -14,7 +14,7 @@ google-generativeai
 faiss-cpu
 
 
-pypdf
+
 python-docx
 
 tiktoken
