@@ -12,7 +12,7 @@ langchain-core
 google-generativeai
 
 faiss-cpu
-
+langchain-huggingface
 
 
 python-docx
