@@ -10,7 +10,7 @@ langchain-community
 langchain-core
 
 google-generativeai
-
+sentence-transformers
 faiss-cpu
 langchain-huggingface
 docx2txt
