@@ -1,13 +1,16 @@
-import sys, os
-from asgiref.wsgi import WsgiToAsgi
+import sys
+import os
 
-# Set correct python path
-INTERP = "/home/themrignayanee/pulic_html/chatbot/flow-chatbot/venv/bin/python"
+# Set correct Python path (your venv)
+INTERP = "/home/themrignayanee/public_html/chatbot/flow-chatbot/venv/bin/python"
 if sys.executable != INTERP:
     os.execl(INTERP, INTERP, *sys.argv)
 
-# Import your FastAPI app
+# Import FastAPI app
 from main import app
 
-# Convert ASGI → WSGI
-application = WsgiToAsgi(app)
+# Convert ASGI -> WSGI
+from asgiref.compatibility import guarantee_single_callable
+from asgiref.wsgi import AsgiToWsgi
+
+application = AsgiToWsgi(app)
